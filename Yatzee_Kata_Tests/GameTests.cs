@@ -9,8 +9,8 @@ namespace Tests
         [Test]
         public void When_scoring_it_should_return_a_score()
         {
-            ClassUnderTest.Score();
-            Assert.Pass();
+            var score = ClassUnderTest.Score();
+            Assert.That(score, Is.TypeOf<int>());
         } 
     }
 }
